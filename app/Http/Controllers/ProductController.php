@@ -8,8 +8,6 @@ use Illuminate\Http\Request;
 class ProductController extends Controller
 {
 
-    protected $fillable = ['name', 'description', 'price'];
-
     public function index()
     {
         return Product::all();
